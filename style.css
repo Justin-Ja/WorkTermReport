@@ -1,3 +1,50 @@
-.body {
-  background-color: #444444
+/* Root html objects */
+body{
+    background-color: rgb(210, 210, 210);
+    font-family: Roboto, sans-serif;
+}
+
+/* h1, h2, h3{
+    text-align: center;
+} */
+
+nav{
+    background-color: rgb(6, 40, 61);
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.75em;
+    margin: -0.5em;
+}
+
+/* Navbar styles ----------------------------------- */
+.nav-list{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-list, .nav-list-item{
+    display: inline-flex;
+    margin: 0;
+    padding-left: 1em;
+}
+
+.nav-link{
+    border: 1px solid rgb(71, 181, 255);    
+    border-radius: 10px;
+    background-color: rgb(19, 99, 223);
+    color: black;
+    text-decoration: none; 
+    display: inline-block;
+    padding: 0.5em 1em; 
+    transition: background-color 150ms ease-in;
+}
+
+.nav-link:hover{
+    background-color: rgb(71, 181, 255);
+}
+.nav-list :last-child .nav-link {
+    margin-left: 1em;
 }
