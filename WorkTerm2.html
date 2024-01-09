@@ -1,0 +1,123 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Work term report 2</title>
+</head>
+
+<body class="work-term-background-gradiant-two">
+    <nav>
+        <a class="nav-link-WT2" href="index.html">Home</a>
+        <ul class="nav-list">
+            <li class="nav-list-item">
+                <a class="nav-link-WT2" href="WorkTerm1.html">Work Term 1 (Kritik)</a>
+            </li>
+            <li class="nav-list-item">
+                <a class="nav-link-WT2" href="WorkTerm2.html">Work Term 2 (Kritik)</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1 class="huge-text"><u>Work Term Report #2</u></h1>
+
+    <div class="container">
+        <div>
+            <div class="img-header-container">
+                <h2>About the Employer</h2>      
+                <a href="https://www.kritik.io/" target="_blank">   
+                    <img src="Images/logoKritik.jpg"
+                    alt="Kritik Logo" class="img-header">
+                </a>
+            </div>
+            <p>For my second co-op work term, I stayed at <a href="https://www.kritik.io/" target="_blank">Kritik</a>, since it was an 8 month contract I signed.
+                As a quick refresher (or if you skipped the first report) 
+                Kritik is a peer-assessment platform that allows instructors to create or upload activities for their courses and gives 
+                students the opportunity to evaluate each other’s creations with a rubric provided by the instructor through the activity, 
+                and then give feedback to whoever evaluated their own creation. The goal of Kritik was to help students develop critical thinking skills
+                and to help instrcutors reducing grading burden but increase engagment.
+            </p>
+        </div>
+        <div>
+            <h2>Goals</h2>
+            <p>For this second work term I had new three goals:</p>
+            <ol>
+                <li>Continue with my work on larger features and look to tackle bigger tasks on my own initiative</li>
+                <li>Improve my on call skills, prioitize the correct issues and communicate better with the CS team </li>
+                <li>To leverage AI to make ourselves more efficient and share with the other developers (This was a shared goal amongst the engineering team)</li>
+            </ol>
+            <p>
+                I believe I hit all three goals that I had set out for myself. I became more involved in larger features, taking on more and larger tickets to 
+                help out the team. Towards the end of my term, I had a strong feeling like I was a full-time member of the team and not just a co-op student. 
+                My on-call skills also improved with better prioritization when multiple issues came in at once or started to overlap. I made more of an effort to
+                communicate with the CS team to set expectations of when they expected requests to be fulfilled or the status of a bug they had reported.
+                Finally, I not only shared examples of leveraging AI to be more efficient with the team, I also saw how other members of the team used AI in their daily work.
+                For my examples, I used AI to help generate Unit and E2E tests, generate SQL statements to query the database and used it to read through React documentation to quickly
+                determine how I could fix a front-end bug. One interesting thing I saw my other developers use AI for was help with setting up
+                sending SES messages through AWS.
+            </p>
+        </div>
+        <div>
+            <h2>Job Description / Responsibilities</h2>
+            <p>
+                My responsibilities on this role stayed mostly the same as the first term, but some more were added. As a refresher, my main daily tasks were to complete the priority tickets
+                for the current sprint, and any leftover tickets if all the priority tickets were completed. Every 4-5 weeks, I was put on-call, and responsible to response to any bug reports 
+                or requests by the CS team ASAP, along with the deployment of any hotfixes or new releases for that week.
+            </p>
+            <p>
+                For some new responsibilities that got added for this term, I was encouraged to start reviewing other developers' pull requests (PRs)
+                and either approving it or requesting changes if needed. At the start of September, I also took on the task of performing a load test using
+                Grafana k6 tests to ensure the application was responding quickly with the new influx of users at the start of the semester. Finally, while on call,
+                I started participating in refining meetings to refine new tickets and discuss the work each ticket set out to accomplish.
+            </p>
+        </div>
+        <div>
+            <h2>Accomplishments</h2>
+            <p>
+                There was a lot that I accomplished throughout this second work term for Kritik.
+                The first (and probably biggest feature) was the work I did with a new feature called Role Management. The goal of Role Managment was to allow users who
+                were both instructors and students to use one account instead of using separate accounts. This was a big change in the backend, requiring new database tables
+                along with a complete overhaul of how we check permissions for a given user. This was launched fully at the end of October, with only a couple of bugs popping up due to the release.
+                The low bug count can be attributed to the rigorous QA testing we did, performing another company wide test party to catch as many QA bugs as possible. 
+            </p>
+            <p>
+                Another accomplishment was much more individual. As a company we were sending emails through a service provider called Sendgrid. However, it was determined
+                that it would be cheaper to send emails through Amazon. The main issue with this is that if we were to send emails through Amazon, we would have to migrate and generate
+                all emails within the app. I took on this task, using React-Email to generate new email templates in the app. I collaborated with our designer to update the emails along the way
+                to be more consistant-looking and improve the quality.
+            </p>
+            <p>
+                Finally, the last accomplishment was the assistance I provided with another feature which was called "Full Roster Sync".
+                To secure a big sale from a new, potential customer, they required an update to one of our current tools called roster sync, which allowed instructors to pull students
+                from their Learning Management Systems (LMS) - think Blackboard, D2l, Moodle etc. Our tool did not pull co-instructors or TAs which was what the customer wanted before buying the product.
+                This was a surprise to the engineering team and we only had two weeks to implement and test the product before the winter semester.
+                Though through strong teamwork, we were able to meet this deadline just in time and secure the sale.
+            </p>
+            <div class="">
+                <!-- Update this to be acrtually formatted and not bad.  -->
+                <img src="Images/kritikHolidays.jpg" alt="Kritik Chirstmas photo" class="centered-image">            
+            </div> 
+        </div>
+        <div>
+            <h2>Conclusion</h2>
+            <p>
+                Overall, I had a great co-op experience at Kritik! The team was super knowledgable and always willing to help out with any questions I had.
+                On top of that, there was so much I learned, from gaining more experience with Typescript and Postgresql, to learning more tools such as AWS to deploy the application
+                or Datadog to review logs and RUM replays to help debug. I think my manager Mark said it best (paraphrased), that co-ops at Kritik are treated like a "full" member of the 
+                team and not just a co-op student.
+        </div>
+        <div>
+            <h2>Acknowledgments</h2>
+            <p class="center">
+                For acknowledgments, I'd like to say one final thank you to the entire engineer and product team. They've been such an amazing team combining friendliness with 
+                the smarts that each member of the team had. They've set a high bar for my expectations for all the future teams I'll be working with.
+            </p>
+        </div>
+    </div>
+</body>
