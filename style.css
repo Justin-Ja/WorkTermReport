@@ -1,3 +1,4 @@
+/* Root html objects */
 body{
     background-color: rgb(200, 200, 200);
     font-family: Roboto, sans-serif;
@@ -29,12 +30,16 @@ ol li, .text-list {
     font-size: 20px;
 }
 
-.work-term-background-gradiant{
+.work-term-background-gradiant-one{
     background-image: linear-gradient(#f7b462, #8d1404);
 }
 
+.work-term-background-gradiant-two{
+    background-color: rgb(143, 211, 228);
+}
+
 .container {
-    background-color: rgb(240, 240, 240); 
+    background-color: rgb(235, 235, 235); 
     border-radius: 12px; 
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
     padding: 20px; 
@@ -75,6 +80,15 @@ ol li, .text-list {
 
 .img-inline img:first-of-type{
     margin-left: 60%;
+}
+
+.centered-image {
+    display: block;
+    margin: auto;
+    border: 4px solid #333; 
+    border-radius: 6px;
+    max-width: 90%; 
+    height: 90%;
 }
 
 .top-spacing {
@@ -133,6 +147,8 @@ nav{
 }
 
 /* DIFFERENT BUTTON STYLES FOR THE NAV BAR PER SITE */
+/* ------------------------------------------------ */
+
 .nav-link-home{
     border: 1px solid rgb(71, 181, 255);    
     border-radius: 10px;
@@ -161,4 +177,19 @@ nav{
 
 .nav-link-WT1:hover{
     background-color: #ec523d;
+}
+
+.nav-link-WT2{
+    border: 1px solid #000000;    
+    border-radius: 10px;
+    background-color: #0077ff;
+    color: black;
+    text-decoration: none; 
+    display: inline-block;
+    padding: 0.5em 1em; 
+    transition: background-color 150ms ease-in;
+}
+
+.nav-link-WT2:hover{
+    background-color: #a57eff;
 }
