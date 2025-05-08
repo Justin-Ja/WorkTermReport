@@ -1,0 +1,132 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Work term report 3</title>
+</head>
+
+
+<body class="work-term-background-gradiant-three">
+    <nav>
+        <a class="nav-link-WT3" href="index.html">Home</a>
+        <ul class="nav-list">
+            <li class="nav-list-item">
+                <a class="nav-link-WT3" href="WorkTerm1.html">Work Term 1 (Kritik)</a>
+            </li>
+            <li class="nav-list-item">
+                <a class="nav-link-WT3" href="WorkTerm2.html">Work Term 2 (Kritik)</a>
+            </li>
+            <li class="nav-list-item">
+                <a class="nav-link-WT3" href="WorkTerm3.html">Work Term 3 (MANTECH)</a>
+            </li>
+            <li class="nav-list-item">
+                <a class="nav-link-WT3" href="WorkTerm4.html">Work Term 4 (MANTECH)</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1 class="huge-text"><u>Work Term Report #3</u></h1>
+
+    <div class="container">
+        <div>
+            <div class="img-header-container">
+                <h2>About the Employer</h2>      
+                <a href="https://mantech-inc.com/" target="_blank">   
+                    <img src="Images/logoMantech.jpg"
+                    alt="MANTECH LOGO" class="img-header-larger">
+                </a>
+            </div>
+            <p>
+                For my third co-op work term, I started working at <a href="https://mantech-inc.com/" target="_blank">MANTECH</a>.
+                MANTECH is a company that manufactures innovative water/soil quality analysis systems in the form of different chemistry
+                hardwares (such as their PeCOD machine, or robots for automated titration and analysis) and software packages that interfaces with the 
+                hardwares. The mission of MANTECH is to "generate the highest quality results, in the shortest amount of time, with green methods, using simple and smart analyzers."
+            </p>
+        </div>
+        <div>
+            <h2>Job Description / Responsibilities</h2>
+            <p>
+                The job for this co-op revolves around the development of a brand new software package for the company. Currently, their main package, MANTECH PRO
+                is quite old, from the user interface to the way the code was written. The company wants to completely overhaul this software into a new package called MANTECH NEXTGEN,
+                which would update every aspect of the software, from the way users interact with it, to how the code is designed to "future-proof" it in case of future updates/bug fixes etc.
+            </p>
+            <p>
+                My responsibilities for this term was to work on several different hardware screens. This task was to create different screens in C#'s WPFs that would interface with 
+                some of the hardware that we provide. I got to create the screens for conductivity meters, spectrophotometers and metering pumps. 
+                This work covered front-end, back-end, database changes and additions. It also included moving the related hardware DLLs into sub-repositories in the project for better maintenance/logging of changes.
+                The main idea of the screens was to be able to easily add a new hardware 'profile' to the program and be able to update and manually calibrate the hardware to ensure its set up correctly.
+                In the future, these profiles will be used in other parts of the program, (such as a script action section to automate running some of these machines) so development of these screens had to keep that in mind.
+            </p>
+            <div class="">
+                <img src="Images/conductivityMeter.jpg" alt="conductivity Meter" class="centered-image">            
+            </div> 
+            <p class="caption">Above is when I got to test out the conductivity meters I worked on! (Had to censor the screen that shows the actual program)</p>
+        </div>
+        <div>
+            <h2>Goals</h2>
+            <p>For this third work term I had three goals:</p>
+            <ol>
+                <li>Become more familiar with OOP programming and desgin principles that are related to building applications in an object oriented format</li>
+                <li>Take on more development challenges and larger projects that need to be completed in the codebase.</li>
+                <li>Have better time management with bigger projects given to me, and to be able to develop over time in a more consistent manner</li>
+            </ol>
+            <p>
+                I believe I achieved the first two goals, but am still  still working on that third goal. <br><br>
+                
+                Firstly, I believe I have become more familiar with OOP and related design principles. This is more thoroughly explained in the accomplishments section, but I've become more skilled with C#,
+                learning how to best separate classes and following SOLID principles and learned about dependency injections. <br><br>
+                Secondly, this workterm only consisted of large features spanning multiple areas of the codebase
+                so it was easy to work on this goal. These hardware screens consisted of coding on the whole stack, to lengthy testing and longer PR reviews with a lot of feedback. <br><br>
+                Finally, I still think I am working on this third goal. The main issue is that  I find myself being able to stay on track for a week or two at a time, 
+                but there are still weeks in between where I do not end up hitting that goal that I set out to reach at the start of the week. I will keep working on this goal over the 4th term 
+                and see if I can reach a point where I can say I've hit this goal for sure.
+            </p>
+        </div>
+        <div>
+            <h2>Accomplishments</h2>
+            <p>
+                I had a couple of accomplishments with this work term: <br><br>
+                
+                The first accomplishment this work term  was learning to work with C# and the MVVM (Model-View-ViewModel) design pattern.  
+                This design pattern was important for maintaining separation of concerns and ensuring that the UI elements remained loosely connected with the back-end logic. 
+                I learned how to appropriately arrange ViewModels to control data binding and separation of responsibilities for classes, which improved the scalability and maintainability of the code. 
+
+                I also had hands-on experience with dependency injection which allowed for more modularity of classes and components across the project. 
+                This was mainly accomplished through constructor injections, and by creating the objects towards the root of the project, but halfway through the co-op, this got overhauled with a new tool called Autofac. 
+                This allowed developers to easily register interfaces for Autofac to construct at runtime for dependency injections to work.
+            </p>
+            <p>
+                Another accomplishment was having to work around an outdated DLL library when I was working with a hardware device called a metering pump. The issue was this DLL was created to run on 32-bit systems, and 
+                not with .net-8.0 projects. To add on top of this, MANTECH didn't develop this DLL unlike the majority of the other libraries, this was outsourced to a company whos postponed the update.
+                I had the job to not only still develop the metering pump hardware screen, but also determine a way to test it. Luckily, Visual Studio has a way to specify target CPU platform,
+                so I could run the program at least. The other challenge ended up being a guess-and-check of where the DLL needed to be in the project (as it consisted of multiple files and was particularly finicky
+                with its setup files). In the end, I got the metering pump screen completed, tested, approved and merged into the main project.
+            </p>
+        </div>
+        <div>
+            <h2>Conclusion</h2>
+            <p>
+                The start of this 8-month co-op has gone great so far. Its been nice to work a development job on a new tech stack that I wasn't familiar with and learning more 
+                software design choices. I have enjoyed learning C#, and with its abilitiy to easily develop a desktop application, I'm been thinking of side projects that I could start that
+                would work well in an application format. It's also been really interesting to get to work with the hardware itself to test my code, having a physical component to testing is fun compared to 
+                standard bug/QA testing of a purely software application.
+        </div>
+        <div>
+            <h2>Acknowledgments</h2>
+            <p class="center">
+                I'd like to quickly acknowledgde a couple of my co-workers that helped out starting at MANTECH:
+                <ul class="text-list">
+                    <li>Yousef: Provided a great introduction to the company and an overview of the new project MANTECH NextGen</li>
+                    <li>Aaron: Gave a great introduction into great OOP design patterns and dependency injections</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+</body>
