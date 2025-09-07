@@ -35,7 +35,7 @@ ol li, .text-list {
 }
 
 .work-term-background-gradiant-two{
-    background-color: rgb(143, 211, 228);
+    background-color: rgb(136, 175, 247);
 }
 
 .work-term-background-gradiant-three{
@@ -43,7 +43,7 @@ ol li, .text-list {
 }
 
 .work-term-background-gradiant-four{
-    background-color: linear-gradient(#fafafa, #0f0f0f);
+    background-image: linear-gradient(#2ac8da, #16ca76);
 }
 
 .container {
@@ -58,6 +58,13 @@ ol li, .text-list {
     align-content: center;
     text-align: center;
     justify-content: center;
+}
+
+.caption{
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
 }
 
 .img-header-container {
