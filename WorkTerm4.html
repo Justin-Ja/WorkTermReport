@@ -31,7 +31,93 @@
         </ul>
     </nav>
 
-    <div class="container top-spacing">
-        <P>The 4th term has not been completed yet. Come back later!</P>
+  <h1 class="huge-text"><u>Work Term Report #4</u></h1>
+
+    <div class="container">
+        <div>
+            <div class="img-header-container">
+                <h2>About the Employer</h2>      
+                <a href="https://mantech-inc.com/" target="_blank">   
+                    <img src="Images/logoMantech.jpg"
+                    alt="MANTECH LOGO" class="img-header-larger">
+                </a>
+            </div>
+            <p>
+                For my fourth co-op work term, I continued working at <a href="https://mantech-inc.com/" target="_blank">MANTECH</a>.
+                MANTECH is a company that manufactures innovative water/soil quality analysis systems in the form of different chemistry
+                hardwares (such as their PeCOD machine, or robots for automated titration and analysis) and software packages that interfaces with the 
+                hardwares.
+            </p>
+        </div>
+        <div>
+            <h2>Job Description / Responsibilities</h2>
+            <p>
+                For this co-op term, I am still working on the development of the new software package, MANTECH NEXTGEN, designed to replace their older packages
+                that are less user friendly and generally, harder to debug, update and release the patch for users.
+            </p>
+            <p>
+                My responsibilities for this term turned from working on the hardware screen onto a new overall feature that several people worked on at the same time: a script editor. One massive feature
+                of the software packages that we sell is that users can set up scripts that can automate any hardware machinery connected to a computer. This also allows conditional commands, which allows the user to 
+                run specific commands/hardware based on flow control (IF/ELSE statements) that are set up by the user themselves. Over the course of this term, I would be working on several different script actions,
+                most pertaining to the hardware I worked on in the first term. This work would be two-fold: first allowing the user to set up the script action for a hardware device (and prevent the user from
+                breaking the application), and then creating a runner to control said device when the script was executed.
+         </p>
+        </div>
+        <div>
+            <h2>Goals</h2>
+            <p>For this third work term I had three goals, the third being the same as the third term as its being carried over:</p>
+            <ol>
+                <li>Work more with multi-threading and better understand how to work with threads</li>
+                <li>Better communicate my status on projects and better document my work</li>
+                <li>Have better time management with bigger projects given to me, and to be able to develop over time in a more consistent manner</li>
+            </ol>
+            <p>
+                I think I did a good job trying to achieve all three goals:<br><br>
+                
+                Firstly, I believe I have become more familiar with multi-threading in C#. There are more details in the accomplishments section, but most of my work this term required directly or indirectly working
+                with threads, so by completing my work and getting it merged in means that I've accomplished the first goal and improved my skills with threadings.<br><br>
+                Secondly, this workterm required me to better communicate with my other developers to solve blockers, get help and properly document my work for anyone working on the script editor in the future. I'd say 
+                this goal was achived. <br><br>
+                Finally, while still working on this goal, I think I've achieved great strides in improving my time management skills, along with better communication skills. While I've gotten better 
+                with completing more per day and setting reasonable goals, combined with the second goal of better communication allowed me to notify others when I was falling behind or had a blocker
+                that required someone else to resolve.
+            </p>
+        </div>
+        <div>
+            <h2>Accomplishments</h2>
+            <p>
+                I had one main accomplishment this term, which was learning and properly working with multi-threading: <br><br>
+                
+                With the focus of this work term was on the script editor, it would require strong understanding of how multi-threading works in C#. This is becasue while most script actions are "1-1" (that is one action
+                effects one device), the main task I had was the pump script action, which could turn on and run a list of pumps (one action effects multiple devices). Not only do I need to handle multiple pumps, at any point in a script,
+                a user can either pause or cancle the script from running. It took some time to properly brush up on my multi-threading knowledge, but to help one of the developers over the course of the month of June,
+                had a nice set of slides/presentations to give a refreshing on threading and gave an overview on how C# handles threads. This combined with some of my own research and some trial and error, I was able to 
+                complete the unqiue pump script action and have multiple pumps running at the same time. It took longer than I'd hope to fully complete this part of the project, but I am happy with the end result.
+            </p>
+        </div>
+        <div>
+            <h2>Conclusion</h2>
+            <p>
+                Overall, I enjoyed my time spent at MANTECH and the work I've accomplished. It been quite refreshing to get a more hands-on approach with the hardware and writing software that directly controls 
+                other connected devices. Also working on the project of the script editor was fun, and gave me a chance to work on a real life use case for multi-threading. All of this while working in C# which
+                I found to be a great language to work in created a solid 8-month co-op work term that I'm thankful I had the opportunity to experience.
+
+            <div class="">
+                <img src="Images/groupshot.png" alt="Group photo" class="centered-image">            
+            </div> 
+            <p class="caption">Group photo of the MANTECH Development team! (Unfortunately, the camera ended up being heavily out of focus)</p>
+        </div>
+
+        <div>
+            <h2>Acknowledgments</h2>
+            <p class="center">
+                I'd like to quickly acknowledgde a couple of my co-workers that helped out during my time at MANTECH:
+                <ul class="text-list">
+                    <li>Aaron: Gave more great presentations, mostly relating to multi-threading in </li>
+                    <li>Yousef, Faraz, Zeeshan: Other developers who provided assistance throught the work term</li>
+                    <li>Yaash: My manager for providing guidance throughout the work term(s)</li>
+                </ul>
+            </p>
+        </div>
     </div>
 </body>
